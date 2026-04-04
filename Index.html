@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Find Your Perfect Dog 🐶</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #f5f5f5;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .box {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 400px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    select, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+    }
+
+    #result {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    .donate {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>🐶 Find Your Perfect Dog</h1>
+
+  <div class="box">
+
+    <label>Size:</label>
+    <select id="size">
+      <option>Small</option>
+      <option>Medium</option>
+      <option>Large</option>
+    </select>
+
+    <label>Temperament:</label>
+    <select id="temperament">
+      <option>Sweet</option>
+      <option>Playful</option>
+      <option>Protective</option>
+    </select>
+
+    <label>Age:</label>
+    <select id="age">
+      <option>Puppy</option>
+      <option>Adult</option>
+    </select>
+
+    <button onclick="findDog()">Find My Dog</button>
+
+    <div id="result"></div>
+
+    <div class="donate">
+      <p>❤️ Support this project:</p>
+      <a href="https://cash.app/$paramountvideos94" target="_blank">
+       </button> Donate via Cash App</button>
+      </a>
+      <br><br>
+      <a href="https://www.chime.com/r/kevinmcbride108/?c=s
+        </button>Donate via Chime</button>
+        </a>
+    </div>
+
+  </div>
+
+  <script>
+    function findDog() {
+      let size = document.getElementById("size").value;
+      let temp = document.getElementById("temperament").value;
+
+      let result = "";
+
+      if (size === "Small" && temp === "Sweet") {
+        result = "You match with a Cavalier King Charles Spaniel 🐶 ($500–$2000)";
+      }
+      else if (size === "Large" && temp === "Protective") {
+        result = "You match with a German Shepherd 🐕 ($800–$3000)";
+      }
+      else if (temp === "Playful") {
+        result = "You match with a Labrador Retriever 🐕 ($300–$1500)";
+      }
+      else {
+        result = "You match with a mixed breed dog 🐶 ($100–$500 adoption)";
+      }
+
+      document.getElementById("result").innerText = result;
+    }
+  </script>
+
+</body>
+</html>
