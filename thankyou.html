@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Queue Status</title>
+</head>
+<body style="text-align:center; font-family:Arial;">
+
+  <h1>You're in Line! ⏳</h1>
+
+  <p>Your place in line:</p>
+  <h2 id="queueNumber"></h2>
+
+   <h3>Thank You!😈🏈🍦💨🎉</h3>
+  <p>Your form has been submitted successfully. Please allow 30-60 minutes for Admin to reply. You will recieve your free Pup Package shortly. Wait times vary slightly depending on demand.</p>
+
+
+  <br>
+
+  <h3>If you'd like to support, you can send payment here:</h3>
+  <a href="https://cash.app/$paramountvideos94" target="_blank">
+    <button>Pay with Cash App 💵</button>
+  </a>
+
+  <script>
+    let number = Math.floor(Math.random() * 50) + 1;
+    document.getElementById("queueNumber").innerText = number;
+  </script>
+
+</body>
+</html>
